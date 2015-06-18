@@ -74,7 +74,9 @@ var ViewModel = function() {
 
   this.incrementCounter = function() {
     // this.counter(this.counter() + 1);
-    self.currentCat().counter(self.currentCat().counter() + 1);
+    // self.currentCat().counter(self.currentCat().counter() + 1);
+    var temp = self.currentCat().counter();
+    self.currentCat().counter(temp+1);
   };
 
   this.showCurrentCat = function(clickedCat) {
